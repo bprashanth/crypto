@@ -5,13 +5,14 @@ CFLAGS=-Wall
 SOURCES=$(shell find . -iname "*.cc")
 LDFLAGS=-lgflags
 EXEC=crypto
+INC=-I./
 
 all: push
 
-base: $(SOURCES)
-	$(CC) $(CFLAGS) $(SOURCES) -o $(EXEC) $(LDFLAGS)
+bin: $(SOURCES)
+	$(CC) $(CFLAGS) $(SOURCES) $(INC) -o $(EXEC) $(LDFLAGS)
 
-container: base
+container: bin
 	docker build -t $(PREFIX):$(TAG) .
 
 push: container
