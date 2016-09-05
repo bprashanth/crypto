@@ -1,5 +1,5 @@
 # include <iostream>
-# include "../symmetric.h"
+# include "symmetric/symmetric.h"
 using namespace std;
 
 void Caesar::encrypt() { cout << "caesar encrypt" << endl; }
