@@ -2,6 +2,7 @@
 
 class Caesar: public Crypto {
   public:
-    void encrypt();
-    void decrypt();
+    Caesar() {cout << "caesar init" << endl;}
+    string Encrypt(string msg);
+    string Decrypt(string e);
 };
