@@ -9,5 +9,6 @@ RUN \
   apt-get update && \
   apt-get install -y libgflags-dev libgflags2
 
-ADD crypto crypto
+ADD crypto.out crypto
+ADD test.json test.json
 ENTRYPOINT ["/crypto"]

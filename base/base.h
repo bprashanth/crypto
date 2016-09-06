@@ -3,10 +3,15 @@ using namespace std;
 
 class Crypto {
   public:
-    void encrypt()
-    {cout << "encrypt" << endl;}
-    void decrypt()
-    {cout << "decrypt" << endl;}
+    Crypto() {
+      cout << "crypto init";
+    }
+    string Encrypt(string msg) {
+      return "";
+    }
+    string Decrypt(string e) {
+      return "";
+    }
 };
 
 
