@@ -1,0 +1,3 @@
+#! /bin/bash
+# TODO: Don't check in dotfiles
+ctags -R --languages=c++ --extra=+q --fields=+iaS --c++-kinds=+p --exclude=.git /usr/include/ /usr/lib/x86_64-linux-gnu/ .
